@@ -19,6 +19,7 @@ DIGITAL pins
 	(**2-13**) are for digital inputs and outputs
 	Pins with **~ tilde** means you can use them to output pulse width modulated square waves
 	~**PWM**~: sets the voltage high and low at different frequencies. adjusts the on & off time
+		- Pulse Width Modulation (PWM) is a technique for controlling power
 		- PWM works with LEDs by making a fading effect of the LED by adjusting the duty cycle of the PWM signal
 ANALOG IN pins 
 	- used to measure continuous voltages from 0V to 5V

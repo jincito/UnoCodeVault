@@ -1,0 +1,33 @@
+Every separate pin for Green or Blue or Red color is called Anode. 
+You will always connect “+” to it. Cathode goes to “-“(ground).
+
+RGB LEDs come mostly in 2 versions: Common Anode or Common Cathode.
+Common Anode uses 5V on the common pin, while Common Cathode connects to ground.
+As with any LED, we need to connect some resistors inline (3 total) so we can limit the current being drawn.
+In our sketch, we will start with the LED in the Red color state, then fade to Green,
+then fade to Blue and finally back to the Red color.
+
+Component Required:
+(1) x Elegoo Uno R3
+(1) x 830 Tie PointsBreadboard
+(4) x M-M wires (Male to Male jumperwires)
+(1) x RGB LED
+(3) x 220 ohm resistors
+
+By controlling the brightness of each of the individual LEDs you can mix pretty much any color you want.
+We mix colors the same way you would mix paint on a palette - by adjusting the
+brightness of each of the three LEDs. We will use UNO R3 analogWrite() to output a variable amount 
+of power to the appropriate LEDs. The common negative connection of the LED package is the second pin from the flat
+side. It is also the longest of the four leads and will be connected to the ground.
+Each LED inside the package requires its own 220Ω resistor to prevent too much
+current flowing through it. The three positive leads of the LEDs (one red, one green
+and one blue) are connected to UNO output pins using these resistors.
+Your eye and brain process the amounts of red, green and blue and convert
+it into a color of the spectrum. This same idea is used in TVs, where the LCD has red, green and blue color dots next to each other
+making up each pixel.
+We can control the brightness of each of the red, green and blue parts of the LED
+separately, making it possible to mix any color we like.
+Roughly every 1/500 of a second, the PWM output will produce a pulse. The length
+of this pulse is controlled by the 'analogWrite' function. So 'analogWrite(0)' will not
+produce any pulse at all and 'analogWrite(255)' will produce a pulse that lasts all the
+way until the next pulse is due, so that the output is actually on all the time.
