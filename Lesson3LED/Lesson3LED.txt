@@ -1,0 +1,17 @@
+In this lesson, you will learn how to change the brightness of an LED by using
+different values of resistor.
+Component Required:
+(1) x Elegoo Uno R3
+(1) x 5mm red LED
+(1) x 220 ohmresistor
+(1) x 1k ohm resistor
+(1) x 10k ohm resistor
+(2) x M-M wires (Male to Male jumper wires) */
+
+You do not need to do anything with your UNO, except to
+plug it into a USB cable.
+With the 220 Ω resistor in place, the LED should be quite bright. If you swap out the
+220 Ω resistor for the 1kΩ resistor, then the LED will appear a little dimmer. Finally,
+with the 10 kΩ resistor in place, the LED will be just about visible. Pull the red jumper
+lead out of the breadboard and touch it into the hole and remove it, so that it acts
+like a switch. You should just be able to notice the difference.

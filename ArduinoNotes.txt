@@ -1,0 +1,82 @@
+//I use Obsidian to take notes, therefore I cannot paste images in this .txt file, if there are any gaps it means there was an image reference.
+~~~ ARDUINO CIRCUIT BOARD ~~~
+It is a circuit board that has Microcontroller chips on them--integrated circuits that are like tiny computers.
+	Uses a series of microcontrollers called ATMEGA AVRs
+Arduino UNO Rev3 Schematic sheet
+Power sources
+	USB cable USBA-USB
+	9 volt DC power source with a barrel jack
+		has a voltage regulator that will reduce the voltage to 5 volts
+
+Reset button
+    - resets the Arduino like On/Off switch
+Crystal Resonator
+	Connected to the microcontroller and controls how fast the microcontroller is running
+
+DIGITAL pins
+	**0-13 pins**. used for reading on/off inputs--a button being pressed--binary input
+	**TX & RX** (0-1) is for sending & receiving serial data--GPS, bluetooth, wifi modules etc...
+	(**2-13**) are for digital inputs and outputs
+	Pins with **~ tilde** means you can use them to output pulse width modulated square waves
+	~**PWM**~: sets the voltage high and low at different frequencies. adjusts the on & off time
+		- PWM works with LEDs by making a fading effect of the LED by adjusting the duty cycle of the PWM signal
+ANALOG IN pins 
+	- used to measure continuous voltages from 0V to 5V
+	**ANALOG IN** - has six inputs where you can connect/read analog inputs
+		- the binary on/off? Analog is a continuous signal. there's a lot of sensors out there that have analog outputs. to read outputs use analog input pins
+		- **ADC**: Analog to Digital Converter inside microcontroller. 
+		- ANALOG IN pins are connected to ADC.
+		- **Example of ADC**: an example of a sensor that might output a variable voltage is temperature sensor, the voltage at the output pin of the temperature sensor is going to adjust. if you have that 
+        output pin connected to the ANALOG IN pin then you can read the variable voltage AND THEN use code to translate it into an actual temperature reading.
+POWER pins
+	- GND pin on the pin header is the lowest voltage
+	- 5V and 3.3V can be used as a voltage source for small components
+	- USB port can power the board thru ur computer
+	-DC Jack voltage limit is 7V-20V. It is a 2.1mm Center positive plug
+		- should limit voltage to 12 volts because of 5V VOLTAGE REGULATOR
+		- causes lost power which = excess heat
+		- can connect double a batteries or wall wart supplies
+	- Recommended minimum output current of 1Amp/1000mA
+	- Vin pin can power the board but has a limit (same as DC jack)
+	- Reset pin: if you apply a low voltage it will reset the board (ON/OFF)
+Tristate logic
+	https://reviseomatic.org/help/2-assembler/Assembler%20Tristate%20Logic.php#:~:text=allows%20two%20or%20more%20devices,called%20enable%20or%20chip%20enable.
+Shields
+	circuit boards that plug into your main Arduino and lets you do more stuff
+	Adafruit
+		makes shields you can control motors & servos without having to design motor control circuitry
+	Sparkfun
+		lets you turn your arduino into a simple phone or MP3 player
+IDE
+	Arduino software dev environment
+	uses C / C++
+	**pinMode(**led, OUTPUT) sets the led variable to be an output, this means it can now source voltage
+	**Serial.begin(9600 = rate of comm)** allows us to communicate on the serial port between Arduino and our computer.
+	**Serial.println()** prints something out to Serial monitor window
+	**Serial monitor** allows us to display text from Arduino board to our computer
+	**analogWrite**() pins capable of PWM~ it sets the duty cycle and can adjust the avg. voltage of the pin between 0V-5V but its on a scale so 0-255
+	**analogRead()** allows us to use ADC to read a voltage from analog pins 0-6
+	**digitalRead()** reads the voltage at button pin, checks if high=1 or low=0
+	**digitalWrite()** creating an output on digital pins, either high or low, takes 2 values (pin, High/Low)
+	**delay()** stops program for the amt of time(ms) passed as argument.
+Resistors
+	Voltage dividers
+	- https://youtu.be/XxLKfAZrhbM
+	- Can be use to create a **volume control circuit** or **generate reference voltages**
+	- In general, you shouldn't be using a voltage divider if you have to supply more than 10 mA. 
+    You can calculate Thevenin equivalent resistance of the voltage divider using this equation:
+	- Calculations
+		- It is the same as the parallel resistance formula
+**JOURNAL ENTRY** 12/18/2023:
+- https://youtu.be/nL34zDTPkcs
+- plugged in Arduino for first time 11:44 PM👨‍🍳
+**JOURNAL ENTRY** 12/19/2023:
+- set reset latch https://youtu.be/I0-izyq6q5s?t=152 
+- NOR latch 🌟🌟🌟
+**JOURNAL ENTRY** 12/21/2023:
+- Lit up LED and learned more about Ohms
+- Tried the servo motor but it was jittering (rikitirikiti)
+- Elegoo starter kit tutorial downloaded lesson 4 LEDs
+**JOURNAL ENTRY** 12/22/2023:
+- Created GitHub repo for Arduino projects/tracking
+- lit up multiple LEDs using RGB_LED project
