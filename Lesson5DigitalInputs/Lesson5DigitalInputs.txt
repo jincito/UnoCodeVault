@@ -1,0 +1,17 @@
+In this lesson, you will learn to use push buttons with digital inputs to turn an LED
+on and off.
+Pressing the button will turn the LED on; pressing the other button will turn the LED
+off.
+
+Component Required:
+(1) x Elegoo Uno R3
+(1) x 830 Tie-pointsBreadboard
+(1) x 5mm red LED
+(1) x 220 ohm resistor
+(2) x push switches
+(7) x M-M wires (Male to Male jumperwires)
+
+Switches are really simple components. When you press a button or flip a lever,they
+connect two contacts together so that electricity can flow through them.
+There are only really two electrical connections. Inside the switch package,
+pins B and C are connected together, as are A and D.
