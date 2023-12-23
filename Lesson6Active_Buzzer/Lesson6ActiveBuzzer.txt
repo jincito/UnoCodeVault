@@ -1,0 +1,19 @@
+In this lesson, you will learn how to generate a sound with an active buzzer.
+
+Component Required:
+(1) x Elegoo Uno R3
+(1) x Active buzzer
+(2) x F-M wires (Female to Male DuPont wires)
+
+Electronic buzzers are DC-powered and equipped with an integrated circuit. They
+are widely used in computers, printers, photocopiers, alarms, electronic toys,
+automotive electronic devices, telephones, timers and other electronic products for
+voice devices. Buzzers can be categorized as active and passive ones. Turn the pins
+of two buzzers face up. The one with a green circuit board is a passive buzzer, while
+the other enclosed with a black tape is an activeone.
+The difference between the two is that an active buzzer has a built-in oscillating
+source, so it will generate a sound when electrified. A passive buzzer does not have
+such a source so it will not tweet if DC signals are used; instead, you need to use
+square waves whose frequency is between 2K and 5K to drive it. The active buzzer
+is often more expensive than the passive one because of multiple built-in oscillating
+circuits.

@@ -1,0 +1,25 @@
+In this lesson, you will learn to use push buttons with digital inputs to turn an LED
+on and off.
+Pressing the button will turn the LED on; pressing the other button will turn the LED
+off.
+
+Component Required:
+(1) x Elegoo Uno R3
+(1) x 830 Tie-pointsBreadboard
+(1) x 5mm red LED
+(1) x 220 ohm resistor
+(2) x push switches
+(7) x M-M wires (Male to Male jumperwires)
+
+Switches are really simple components. When you press a button or flip a lever,they
+connect two contacts together so that electricity can flow through them.
+There are only really two electrical connections. Inside the switch package,
+pins B and C are connected together, as are A and D.
+The pin mode of INPUT_PULLUP means that the pin is to be used as an input, but
+that if nothing else is connected to the input, it should be 'pulled up' to HIGH.
+In other words, the default value for the input is HIGH, unless it is pulled LOW by the
+action of pressing the button.
+This is why the switches are connected to GND. When a switch is pressed, it
+connects the input pin to GND, so that it is no longer HIGH.
+Since the input is normally HIGH and only goes LOW when the button is pressed, the
+logic is a little upside down. We will handle this in the 'loop'function.
