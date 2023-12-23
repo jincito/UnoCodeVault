@@ -77,7 +77,9 @@ Resistors
 **JOURNAL ENTRY** 12/21/2023:
 - Lit up LED and learned more about Ohms
 - Tried the servo motor but it was jittering (rikitirikiti)
-- Elegoo starter kit tutorial downloaded lesson 4 LEDs
+- Elegoo starter kit tutorial downloaded
 **JOURNAL ENTRY** 12/22/2023:
 - Created GitHub repo for Arduino projects/tracking
 - lit up multiple LEDs using RGB_LED project
+- Used buttons as ON/OFF inputs
+- Created sound using active buzzer and different sound durations
