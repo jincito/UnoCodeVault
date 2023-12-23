@@ -80,6 +80,6 @@ Resistors
 - Elegoo starter kit tutorial downloaded
 **JOURNAL ENTRY** 12/22/2023:
 - Created GitHub repo for Arduino projects/tracking
-- lit up multiple LEDs using RGB_LED project
-- Used buttons as ON/OFF inputs
-- Created sound using active buzzer and different sound durations
+- lit up multiple LEDs using RGB_LED project lesson 4
+- Used buttons as ON/OFF inputs lesson 5
+- Created sound using active buzzer and different sound durations lesson 6
