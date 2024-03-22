@@ -1,5 +1,3 @@
-//README!    This code is forked/cloned from https://github.com/raidel-a/arduinoFlappyBirds... THANK YOU RAIDEL!
-
 #include <Wire.h>
 #include <LiquidCrystal.h>
 // #include <LiquidCrystal_I2C.h>
